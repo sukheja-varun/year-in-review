@@ -1,1 +1,36 @@
-<p>products-viewed works!</p>
+<div class="container">
+  <header>
+    <i class="fab fa-buromobelexperte fa-4x"></i>
+    <i
+      class="fas fa-chevron-up float-right fa-2x mr-2"
+      (click)="onPrev()"
+    ></i>
+  </header>
+  <div class="mid-section text-center col-md-6 mx-auto">
+    <h2 class="font-weight-bold ">Your Most Viewed Products</h2>
+    <div class="products margin-top">
+      <div
+        class="d-flex row my-2 border-bottom"
+        *ngFor="let product of _reviewHttp?.userData?.product_list"
+      >
+        <div class="col-2">
+          <img
+            width="50px"
+            height="50px"
+            [src]="product?.url"
+            class="rounded "
+            alt="..."
+          />
+        </div>
+        <div class="col-7">
+          {{ product?.product_name }}
+        </div>
+        <div class="col-3 text-center">
+          <span class="font-weight-bold">{{ product?.view_count }}</span>
+          <br />
+          Times
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
