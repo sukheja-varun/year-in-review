@@ -1,0 +1,22 @@
+$glamm-color: #ff9797;
+
+header {
+    position: absolute;
+    top: 0;
+}
+
+.rain-bow-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.margin-top {
+  margin-top: 10vh;
+}
+
+.btn-glamm {
+  color: #fff;
+  background-color: $glamm-color;
+  border-color: $glamm-color;
+}
