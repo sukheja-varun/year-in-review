@@ -1,7 +1,7 @@
 <!-- app.component.html -->
 <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
   <div class="section">Some section1</div>
-  <div class="section" (click)="fullpage_api.moveSectionDown()">
+  <!-- <div class="section" (click)="fullpage_api.moveSectionDown()">
     Some section2
   </div>
   <div class="section">
@@ -11,5 +11,8 @@
   </div>
   <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">
     Some section4
+  </div> -->
+  <div class="section" >
+    <app-thank-you></app-thank-you>
   </div>
 </div>

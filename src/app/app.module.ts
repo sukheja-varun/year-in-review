@@ -5,10 +5,11 @@ import { AppComponent } from "./app.component";
 
 import { AngularFullpageModule } from "@fullpage/angular-fullpage";
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { ThankYouComponent } from './components/thank-you/thank-you.component';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ThankYouComponent],
   imports: [BrowserModule,
     AngularFullpageModule,
     MDBBootstrapModule.forRoot()
