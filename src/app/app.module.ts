@@ -1,19 +1,16 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-import { AppComponent } from "./app.component";
+import { AppComponent } from './app.component';
 
-import { AngularFullpageModule } from "@fullpage/angular-fullpage";
+import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule,
-    AngularFullpageModule,
-    MDBBootstrapModule.forRoot()
-  ],
+  declarations: [AppComponent, HomeComponent],
+  imports: [BrowserModule, AngularFullpageModule, MDBBootstrapModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
