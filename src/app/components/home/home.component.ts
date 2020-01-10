@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ReviewHttpService } from 'src/app/services/review-http.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   hover: boolean = false;
 
-  constructor() {}
+  constructor(public _reviewHttp: ReviewHttpService) {}
 
   ngOnInit() {}
 }
