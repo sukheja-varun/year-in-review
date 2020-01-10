@@ -1,0 +1,10 @@
+<div class="container d-flex justify-content-center">
+  <div (click)="onNext()" (mouseover)="hover=true" (mouseleave)="hover=false" >
+    <div class="text-center">
+      More
+    </div>
+    <div class="semi-circle">
+      <i class="fas fa-angle-double-down animated" [ngClass]="{'bounce': hover}"></i>
+    </div>
+  </div>
+</div>

@@ -1,31 +1,31 @@
 <div class="container">
-  <header>
+  <!-- <header>
     <i class="fab fa-buromobelexperte fa-4x"></i>
     <i
       class="fas fa-chevron-up float-right fa-2x mr-2"
       (click)="onPrev()"
     ></i>
-  </header>
+  </header> -->
   <div class="mid-section text-center col-md-6 mx-auto">
     <h2 class="font-weight-bold ">Your Most Viewed Products</h2>
     <div class="products margin-top">
       <div
-        class="d-flex row my-2 border-bottom"
+        class="d-flex row my-3 align-items-center"
         *ngFor="let product of _reviewHttp?.userData?.product_list"
       >
         <div class="col-2">
           <img
-            width="50px"
-            height="50px"
+            width="60px"
+            height="60px"
             [src]="product?.url"
-            class="rounded "
+            class="rounded border"
             alt="..."
           />
         </div>
-        <div class="col-7">
+        <div class="col-8">
           {{ product?.product_name }}
         </div>
-        <div class="col-3 text-center">
+        <div class="col-2 text-center border p-0">
           <span class="font-weight-bold">{{ product?.view_count }}</span>
           <br />
           Times
@@ -33,4 +33,7 @@
       </div>
     </div>
   </div>
+  <footer>
+    <app-more></app-more>
+  </footer>
 </div>
