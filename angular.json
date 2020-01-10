@@ -28,9 +28,13 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/fullpage.js/dist/fullpage.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/fullpage.js/dist/fullpage.extensions.min.js",
+              "./node_modules/fullpage.js/vendors/scrolloverflow.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,6 +128,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "year-in-review"
 }
