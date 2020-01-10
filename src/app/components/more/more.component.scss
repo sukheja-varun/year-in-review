@@ -1,7 +1,9 @@
 .container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  // position: absolute;
+  // bottom: 0;
+  // @media (max-width: 480px) {
+  //   left: 0;
+  // }
 }
 
 $size: 45px;
@@ -15,45 +17,43 @@ $size: 45px;
 
   border-top-left-radius: $size * 2;
   border-top-right-radius: $size * 2;
-  
 }
 .fa-angle-double-down {
-    color: white;
+  color: white;
   position: relative;
   left: 38px;
   top: 16px;
 }
 
-
 .animated {
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
   }
-  @-webkit-keyframes bounce {
-    0%,
-    100% {
-      -webkit-transform: translateY(0);
-    }
-    50% {
-      -webkit-transform: translateY(-5px);
-    }
+  50% {
+    -webkit-transform: translateY(-5px);
   }
-  @keyframes bounce {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-5px);
-    }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  .bounce {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
+  50% {
+    transform: translateY(-5px);
   }
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}

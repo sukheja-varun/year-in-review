@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class FullPageService {
   fullpage_api: any;
-  private currentPageIndex: number;
+  public currentPageIndex: number;
 
   constructor() { }
 
