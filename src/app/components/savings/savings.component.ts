@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ReviewHttpService } from 'src/app/services/review-http.service';
 
 @Component({
   selector: 'app-savings',
@@ -6,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./savings.component.scss']
 })
 export class SavingsComponent implements OnInit {
+  constructor(public _reviewHttp: ReviewHttpService) {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

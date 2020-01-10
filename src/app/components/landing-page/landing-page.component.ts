@@ -26,9 +26,13 @@ export class LandingPageComponent implements OnInit {
       licenseKey: 'YOUR LICENSE KEY HERE',
       anchors: [
         'getStarted',
+        'firstPage',
         'secondPage',
         'thirdPage',
         'fourthPage',
+        'fifthPage',
+        'sixthPage',
+        'seventhPage',
         'lastPage'
       ],
       menu: '#menu',

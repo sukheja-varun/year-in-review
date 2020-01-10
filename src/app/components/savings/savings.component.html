@@ -1,1 +1,42 @@
-<p>savings works!</p>
+<div class="container">
+    <div class="mid-section m-auto position-relative font-weight-bolder">
+        <div class="mb-5">
+            <span>
+                <span class="font-21">
+                    You have saved
+                </span>
+                <br>
+                <span class="font-51">
+                    ₹
+                </span>
+                <span class="font-90">
+                    {{_reviewHttp?.userData?.savings?.total_savings | number}}
+                </span>
+                <br>
+                <span class="font-21">
+                    with discounts
+                </span>
+            </span>
+        </div>
+        <div class="mb-5">
+            <div class="d-flex justify-content-between text-center">
+                <span>
+                    <span class="font-36 text-darker">
+                        {{_reviewHttp?.userData?.savings?.promo_code}}
+                    </span>
+                    <br>
+                    from promocodes
+                </span>
+                <span>
+                    <span class="font-36 text-darker">
+                        {{_reviewHttp?.userData?.savings?.glamm_points}}
+                    </span>
+                    <br>
+                    as cashback
+                </span>
+            </div>
+        </div>
+        <div class="mb-5">
+        </div>
+    </div>
+</div>
