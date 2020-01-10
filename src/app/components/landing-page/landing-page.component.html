@@ -1,4 +1,4 @@
-<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+<div fullpage id="fullpage" [options]="config" (ref)="setRef($event)">
     <div class="section">
         <app-home *ngIf="_reviewHttp.userData"></app-home>
         <div class="fa fa-refresh fa-5x fa-spin" *ngIf="!_reviewHttp?.userData"></div>

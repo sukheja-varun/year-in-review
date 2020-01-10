@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ReviewHttpService } from 'src/app/services/review-http.service';
+import { FullPageService } from 'src/app/services/full-page.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -14,7 +15,8 @@ export class LandingPageComponent implements OnInit {
 
   constructor(
     private _activatedRoute: ActivatedRoute,
-    public _reviewHttp: ReviewHttpService
+    public _reviewHttp: ReviewHttpService,
+    private _fullPage: FullPageService
   ) {
     // console.log(_activatedRoute.snapshot.params.id);
 
@@ -36,7 +38,7 @@ export class LandingPageComponent implements OnInit {
         console.log('After resize');
       },
       afterLoad: (origin, destination, direction) => {
-        console.log(origin.index);
+        this._fullPage.setCurrentPageIndex(origin.index);
       }
     };
   }
@@ -49,7 +51,7 @@ export class LandingPageComponent implements OnInit {
     this._reviewHttp.getUserData(this._activatedRoute.snapshot.params.id);
   }
 
-  getRef(fullPageRef) {
-    this.fullpage_api = fullPageRef;
+  setRef(fullPageRef) {
+    this._fullPage.fullpage_api = fullPageRef;
   }
 }

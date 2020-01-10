@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FullPageService } from 'src/app/services/full-page.service';
 
 @Component({
   selector: 'app-thank-you',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThankYouComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _fullPage: FullPageService) { }
 
   ngOnInit() {
+  }
+
+  onPrev() {
+    this._fullPage.previousPage();
   }
 
 }
