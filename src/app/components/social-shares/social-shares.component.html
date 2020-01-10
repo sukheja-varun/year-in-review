@@ -1,1 +1,23 @@
-<p>social-shares works!</p>
+<div class="container">
+    <div class="mid-section m-auto position-relative font-weight-bolder">
+        <div class="col-4 justify-content-center mb-5 mx-auto"
+            style="background: url('/assets/images/social-shares.svg') no-repeat;">
+            <span>
+                <span class="font-21">
+                    You have shared
+                </span>
+                <br>
+                <span class="font-90">
+                    {{_reviewHttp?.userData?.no_of_shares | number}}
+                </span>
+                <span class="font-21">
+                    times
+                </span>
+                <br>
+                <span class="font-21">
+                    to spread the love
+                </span>
+            </span>
+        </div>
+    </div>
+</div>
