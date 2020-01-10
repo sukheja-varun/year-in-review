@@ -1,1 +1,52 @@
-<p>earnings works!</p>
+<div class="container">
+    <div class="mid-section m-auto position-relative font-weight-bolder">
+        <div class="mb-5">
+            <span>
+                <span class="font-21">
+                    You have earned
+                </span>
+                <br>
+                <span class="font-90 d-flex">
+                    {{_reviewHttp?.userData?.earning?.total_earnings | number}}
+                    <img class="ml-3" src="/assets/images/coin-copy.svg" alt="coin">
+                </span>
+                <!-- <span class="font-51"> -->
+                <!-- </span> -->
+                <br>
+                <span class="font-21">
+                    with discounts
+                </span>
+            </span>
+        </div>
+        <div class="mb-5">
+            <div class="d-flex justify-content-between text-center">
+                <span>
+                    <span class="d-inline-flex font-36 text-darker">
+                        {{_reviewHttp?.userData?.earning?.from_sharing}}
+                        <img width="36px" class="ml-1" src="/assets/images/coin-copy.svg" alt="coin">
+                    </span>
+                    <br>
+                    social sharing
+                </span>
+                <span>
+                    <span class="d-inline-flex font-36 text-darker">
+                        {{_reviewHttp?.userData?.earning?.from_orders}}
+                        <img width="36px" class="ml-1" src="/assets/images/coin-copy.svg" alt="coin">
+                    </span>
+                    <br>
+                    orders
+                </span>
+                <span>
+                    <span class="d-inline-flex font-36 text-darker">
+                        {{_reviewHttp?.userData?.earning?.from_circle}}
+                        <img width="36px" class="ml-1" src="/assets/images/coin-copy.svg" alt="coin">
+                    </span>
+                    <br>
+                    glammCircle
+                </span>
+            </div>
+        </div>
+        <div class="mb-5">
+        </div>
+    </div>
+</div>

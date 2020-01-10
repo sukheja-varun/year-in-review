@@ -1,10 +1,19 @@
 <div class="container">
-    <div class="mid-section m-auto text-center position-relative">
+    <div class="mid-section m-auto position-relative font-weight-bolder">
         <div class="mb-5">
-            <h2 class="font-weigth-bolder">
-                Your gifts
-            </h2>
+            <span>
+                <span class="font-21">
+                    You have received
+                </span>
+                <br>
+                <span class="font-90">
+                    {{_reviewHttp?.userData?.free_gifts?.length | number}}
+                </span>
+                <br>
+                <span class="font-21">
+                    free Gifts
+                </span>
+            </span>
         </div>
-        <div class="mb-5"></div>
-
     </div>
+</div>
