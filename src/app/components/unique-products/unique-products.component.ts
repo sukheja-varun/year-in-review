@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ReviewHttpService } from 'src/app/services/review-http.service';
 
 @Component({
   selector: 'app-unique-products',
@@ -6,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./unique-products.component.scss']
 })
 export class UniqueProductsComponent implements OnInit {
+  constructor(public _reviewHttp: ReviewHttpService) {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

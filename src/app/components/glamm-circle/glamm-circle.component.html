@@ -1,1 +1,24 @@
-<p>glamm-circle works!</p>
+<div class="container">
+    <div class="mid-section m-auto position-relative font-weight-bolder">
+        <div class="col-4 justify-content-center mb-5 mx-auto">
+            <span>
+                <span class="font-21">
+                    You have
+                </span>
+                <br>
+                <span class="font-90">
+                    {{_reviewHttp?.userData?.glamm_circle_reached | number}}
+                </span>
+                <br>
+                <span class="font-21">
+                    users in your glammCIRCLE
+                </span>
+                <br>
+                <img src="/assets/images/glamm-circle.png" alt="">
+            </span>
+        </div>
+    </div>
+    <footer>
+        <app-more></app-more>
+    </footer>
+</div>
