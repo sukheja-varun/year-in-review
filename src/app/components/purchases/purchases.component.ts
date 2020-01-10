@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ReviewHttpService } from 'src/app/services/review-http.service';
 
 @Component({
-  selector: 'app-glamm-circle',
-  templateUrl: './glamm-circle.component.html',
-  styleUrls: ['./glamm-circle.component.scss']
+  selector: 'app-purchases',
+  templateUrl: './purchases.component.html',
+  styleUrls: ['./purchases.component.scss']
 })
-export class GlammCircleComponent implements OnInit {
+export class PurchasesComponent implements OnInit {
   constructor(public _reviewHttp: ReviewHttpService) {}
 
   ngOnInit() {}

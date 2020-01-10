@@ -18,6 +18,8 @@ import { ProductsViewedComponent } from './components/products-viewed/products-v
 import { UniqueProductsComponent } from './components/unique-products/unique-products.component';
 import { GlammCircleComponent } from './components/glamm-circle/glamm-circle.component';
 import { MoreComponent } from './components/more/more.component';
+import { ShadesComponent } from './components/shades/shades.component';
+import { PurchasesComponent } from './components/purchases/purchases.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { MoreComponent } from './components/more/more.component';
     ProductsViewedComponent,
     UniqueProductsComponent,
     GlammCircleComponent,
-    MoreComponent
+    MoreComponent,
+    ShadesComponent,
+    PurchasesComponent
   ],
   imports: [
     BrowserModule,
