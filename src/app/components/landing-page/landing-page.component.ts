@@ -33,6 +33,8 @@ export class LandingPageComponent implements OnInit {
         'fifthPage',
         'sixthPage',
         'seventhPage',
+        'eighthPage',
+        'ninthPage',
         'lastPage'
       ],
       menu: '#menu',
