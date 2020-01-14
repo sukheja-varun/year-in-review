@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84.924" height="84" viewBox="0 0 84.924 84">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}.cls-2{fill:url(#linear-gradient-2)}.cls-3{fill:url(#linear-gradient-3)}
+        </style>
+        <linearGradient id="linear-gradient" x1="-110.693" x2="-110.693" y1="91.949" y2="91.757" gradientUnits="objectBoundingBox">
+            <stop offset="0"/>
+            <stop offset="1" stop-color="#0015cf"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1="-143.417" x2="-143.417" y1="118.448" y2="118.255" gradientUnits="objectBoundingBox">
+            <stop offset="0"/>
+            <stop offset="1" stop-color="#475ae8"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" x1="-203.091" x2="-203.091" y1="166.835" y2="166.643" gradientUnits="objectBoundingBox">
+            <stop offset="0"/>
+            <stop offset="1" stop-color="#00d18b"/>
+        </linearGradient>
+    </defs>
+    <g id="Side_color_block" data-name="Side color block" transform="rotate(90 42.462 42.462)">
+        <path id="Path_823" d="M84 84.924H0A85.207 85.207 0 0 1 84 0z" class="cls-1" data-name="Path 823"/>
+        <path id="Path_824" d="M65.032 75.091H0A65.975 65.975 0 0 1 65.032 9.34z" class="cls-2" data-name="Path 824" transform="translate(18.968 9.833)"/>
+        <path id="Path_825" d="M46.065 65.247H0A46.7 46.7 0 0 1 46.065 18.69z" class="cls-3" data-name="Path 825" transform="translate(37.935 19.677)"/>
+    </g>
+</svg>

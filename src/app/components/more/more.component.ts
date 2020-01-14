@@ -7,6 +7,7 @@ import { FullPageService } from 'src/app/services/full-page.service';
   styleUrls: ['./more.component.scss']
 })
 export class MoreComponent implements OnInit {
+  hover=false;
 
   constructor(private _fullPage: FullPageService) { }
 

@@ -16,7 +16,7 @@ export class LandingPageComponent implements OnInit {
   constructor(
     private _activatedRoute: ActivatedRoute,
     public _reviewHttp: ReviewHttpService,
-    private _fullPage: FullPageService
+    public _fullPage: FullPageService
   ) {
     // console.log(_activatedRoute.snapshot.params.id);
 
