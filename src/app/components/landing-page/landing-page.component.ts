@@ -44,7 +44,9 @@ export class LandingPageComponent implements OnInit {
         console.log('After resize');
       },
       afterLoad: (origin, destination, direction) => {
-        this._fullPage.setCurrentPageIndex(origin.index);
+        // console.log('origin ===> ', origin, destination, direction);
+
+        this._fullPage.setCurrentPageIndex(destination.index);
       }
     };
   }

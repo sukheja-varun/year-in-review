@@ -7,23 +7,22 @@ export class FullPageService {
   fullpage_api: any;
   public currentPageIndex: number;
 
-  constructor() { }
+  constructor() {}
 
   setCurrentPageIndex(pageIndex: number) {
-    console.log('currentIndex', pageIndex);
+    // console.log('currentIndex', pageIndex);
     this.currentPageIndex = pageIndex;
   }
 
   previousPage() {
-    this.fullpage_api.moveSectionUp()
+    this.fullpage_api.moveSectionUp();
   }
 
   nextPage() {
-    this.fullpage_api.moveSectionDown()
+    this.fullpage_api.moveSectionDown();
   }
 
   jumpTo(pageIndex: number) {
-    this.fullpage_api.moveTo('secondPage', pageIndex)
+    this.fullpage_api.moveTo('secondPage', pageIndex);
   }
-
 }

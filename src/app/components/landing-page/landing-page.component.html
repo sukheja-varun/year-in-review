@@ -1,10 +1,7 @@
 <div fullpage id="fullpage" [options]="config" (ref)="setRef($event)">
   <div class="section bg-myglamm">
     <app-home *ngIf="_reviewHttp.userData"></app-home>
-    <div
-      class="fa fa-refresh fa-5x fa-spin"
-      *ngIf="!_reviewHttp?.userData"
-    ></div>
+    <div class="fa fa-refresh fa-5x fa-spin" *ngIf="!_reviewHttp?.userData"></div>
   </div>
   <div class="section">
     <app-savings></app-savings>
@@ -37,4 +34,4 @@
     <app-thank-you></app-thank-you>
   </div>
 </div>
-<app-more *ngIf="_fullPage.currentPageIndex != 9"></app-more>
+<app-more *ngIf="_fullPage.currentPageIndex != 10"></app-more>
